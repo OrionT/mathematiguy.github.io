@@ -21,7 +21,14 @@ print_hi('Tom')
 {% highlight python %}
 def print_hi(name)
   return "Hi, #{name}"
-end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+{% highlight r %}
+print_hi <- function (name) {
+  return("Hi, #{name}")
+}
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
