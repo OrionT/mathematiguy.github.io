@@ -1,0 +1,38 @@
+What the owner wants:
+	- To publish/share my work
+	- To communicate my brand
+	- To encourage collaboration with other programmers
+	- To share tools that I use/find helpful
+	- To practice learning how to use new tools
+	- To encourage work to completion (having an end goal)
+
+What is my brand?
+	- Advocate of open data (lots of data sharing)
+	- Answering big questions/Curiousity using data
+	- Pretty, functional visualisations and design
+	- Story telling (data journalism ala 538)
+
+What the customer wants:
+Reader:
+	- To find useful code
+	- To learn something interesting about the world
+	- A leaping point into further study about these things
+	- Pithy key facts/trivia
+	- Something to explore
+	- Curiosity satisfied
+
+Employer:
+	- Evidence of skills including:
+	    - Organisation
+	    - Technical ability
+	    - Passion for work
+	- Understand my personality
+	- Understand my brand
+
+Key features:
+	- About me
+	- Blog (articles are the main feature)
+	- Regular posts (monthly or bi-monthly?)
+	- Sources shared
+	- Data cleaned and published
+	- Contact
