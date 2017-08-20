@@ -1,10 +1,8 @@
 ---
 layout: post
+title: "Terra dryades hunc blanditur si reperta principio"
+subtitle: "Solvit Samos Aeeta par exululat"
 ---
-
-# Terra dryades hunc blanditur si reperta principio
-
-## Solvit Samos Aeeta par exululat
 
 Lorem markdownum et lactis est verba celebrantur prope disci *furori* Chrysenque
 de. Quis nec militis auras Coroniden artus! Iussis penetralia bubo, arcus usum
