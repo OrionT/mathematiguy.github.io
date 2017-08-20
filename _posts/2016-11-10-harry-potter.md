@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 # Si semina praemia sic oculos tectus fragore

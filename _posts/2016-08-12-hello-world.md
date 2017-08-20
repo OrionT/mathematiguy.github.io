@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 # Terra dryades hunc blanditur si reperta principio

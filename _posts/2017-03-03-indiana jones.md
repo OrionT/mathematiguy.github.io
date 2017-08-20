@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 # Dabat et Theseus interea nescius et fugat

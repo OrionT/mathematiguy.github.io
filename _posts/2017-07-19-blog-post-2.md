@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 # Cortice audito parentem times igitur coniunctis hirsuti

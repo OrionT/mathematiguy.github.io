@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 # Dedit relinquit Bybli praemia ut pro est

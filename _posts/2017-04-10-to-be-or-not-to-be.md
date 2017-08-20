@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 ---
 
 # Fateri seriemque ne Tereus serpunt cristae elisi
