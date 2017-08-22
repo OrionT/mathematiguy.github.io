@@ -3,10 +3,10 @@
 <header>
 	<div class="title">
 		<h2><a href="#">{{page.title}}</a></h2>
-		<p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
+		<p>{{page.subtitle}}</p>
 	</div>
 	<div class="meta">
-		<time class="published" datetime="2015-10-18">October 18, 2015</time>
-		<a href="#" class="author"><span class="name">Jane Doe</span><img src="{{base}}/images/avatar.jpg" alt="" /></a>
+		<time class="published" datetime="2015-10-18">{{page.date | date: '%B %d, %Y'}}</time>
+		<a href="#" class="author"><span class="name">{{page.writer}}</span><img src="{{base}}/images/avatar.jpg" alt="" /></a>
 	</div>
 </header>
