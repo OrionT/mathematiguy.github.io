@@ -1,44 +1,37 @@
 ---
 layout: default
 ---
-	<body class="single">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!-- Main -->
+	<div id="main">
 
-				{% include header.html %}
+		<article class="post">
 
-				{% include menu.html %}
+			{% include post/header.html %}
 
-				<!-- Main -->
-					<div id="main">
+			<body>
 
-						<article class="post">
+					<div>
 
-							{% include post/header.html %}
-
-							<body>
-
-								<!-- Wrapper -->
-									<div id="wrapper">
-
-										{{content}}
-
-									</div>
-
-							</body>
-
-								{% include post/footer.html %}
-
-							
-						</article>
+						{{content}}
 
 					</div>
 
-			{% include footer.html %}
+			</body>
 
-		</div>
+				{% include post/footer.html %}
 
-	{% include scripts.html %}
+		</article>
 
-</body>
+		<!-- Sidebar -->
+			<section id="sidebar">
+
+				{% include sidebar/posts.html %}
+
+				{% include about.html %}
+
+				{% include footer.html %}
+
+			</section>
+
+	</div>
