@@ -2,32 +2,21 @@
 layout: default
 ---
 
-{% include base.html %}
+<body>
 
-<!-- Wrapper -->
-<div id="wrapper" class="fade-in">
+	<!-- Wrapper -->
+		<div id="wrapper">
 
-	<!-- Intro -->
-		<div id="intro">
-			<h1>{{site.title}}</h1>
-			<p>{{site.description}}</p>
-			<ul class="actions">
-				<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-			</ul>
+			{% include header.html %}
+
+			{% include menu.html %}
+
+			{{content}}
+
+			{% include sidebar.html %}
+
 		</div>
 
-	<!-- Header -->
-		<header id="header">
-			<a href="{{base}}/index.html" class="logo">{{site.title}}</a>
-		</header>
+	{% include scripts.html %}
 
-	{% include navigation.html %}
-
-		<!-- Main -->
-		<div id="main">
-			{{ content }}
-		</div>
-
-	{% include footer.html %}
-
-</div>
+</body>
