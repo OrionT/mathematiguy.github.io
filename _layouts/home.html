@@ -2,34 +2,19 @@
 layout: default
 ---
 
-<body>
+{{content}}
 
-	<!-- Wrapper -->
-		<div id="wrapper">
+<!-- Sidebar -->
+	<section id="sidebar">
 
-			{% include header.html %}
+		{% include sidebar/intro.html %}
 
-			{% include menu.html %}
+		{% include sidebar/mini-posts.html %}
 
-			{{content}}
+		{% include sidebar/posts.html %}
 
-			<!-- Sidebar -->
-				<section id="sidebar">
+		{% include about.html %}
 
-					{% include sidebar/intro.html %}
+		{% include footer.html %}
 
-					{% include sidebar/mini-posts.html %}
-
-					{% include sidebar/posts.html %}
-
-					{% include about.html %}
-
-					{% include footer.html %}
-
-				</section>
-
-		</div>
-
-	{% include scripts.html %}
-
-</body>
+	</section>
