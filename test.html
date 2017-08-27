@@ -2,20 +2,13 @@
 layout: default
 ---
 
-{% for post in site.posts limit: 5 %}
-
-<section>
-	<ul class="posts">
-		<li>
-			<article>
-				<header>
-					<h3><a href="#">{{post.title}}</a></h3>
-					<time class="published" datetime="2015-10-20">{{post.date | date: '%B %d, %Y' }}</time>
-				</header>
-				<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-			</article>
-		</li>
-	</ul>
-</section>
-
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+  <div class="content">
+    {{ post.content }}
+  </div>
 {% endfor %}
