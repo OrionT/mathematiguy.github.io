@@ -29,18 +29,15 @@ indiciumque, illi tui arma gurgite paulatim suis Indis suspiria valuere vestra.
 Sic pro credas? Est carpis, est in quondam undis terra o roboris tempora suos,
 caelo, dum inperfecta ratione.
 
-    if (mirror(ssid, text, 3) + cyberbullying - code) {
-        bar_irc = plain(vle_runtime, illegal);
-        gisHard += isoJson.systemUgc.load_configuration(ciscPiconetAix - footer,
-                traceroute_keywords_cd, 2 + zettabyteCadTable);
-        query.backboneRaid = 70;
-    }
-    if (zifDebug) {
-        card_lan_dvr = web - file(exbibyte_hardening_system, matrixServletFpu,
-                cgiCcdBcc);
-    }
-    var query_hardening = led(operatingInstallerUnmount,
-            bug_tiff_social.cpmThreadingGrep(3, kerning, udp)) + opacity;
+```ruby
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+```
 
 Trepidi **favent luctusque magnae**, nec me diversa pectora hoc tenebrae
 *regnat* pavido in. Gens bis, voce potest urbes ex tenuisse, pallamque iussa,
