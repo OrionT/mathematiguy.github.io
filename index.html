@@ -13,15 +13,15 @@ layout: home
 			<article class="post">
 				<header>
 					<div class="title">
-						<h2><a href="{{base}}{{post.url}}">{{post.title}}</a></h2>
+						<h2><a href="{{base}}/{{post.url}}">{{post.title}}</a></h2>
 						<p>{{post.subtitle}}</p>
 					</div>
 					<div class="meta">
 						<time class="published" datetime="2015-11-01">{{post.date | date: '%B %d, %Y'}}</time>
-						<a href="#" class="author"><span class="name">Caleb Moses</span><img src="images/avatar.jpg" alt="" /></a>
+						<a href="#" class="author"><span class="name">Caleb Moses</span><img src="{{base}}/images/avatar.jpg" alt="" /></a>
 					</div>
 				</header>
-				<a href="{{base}}{{post.url}}" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+				<a href="{{base}}{{post.url}}" class="image featured"><img src="{{base}}/images/pic01.jpg" alt="" /></a>
 				<p>{{post.excerpt}}</p>
 				<footer>
 					<ul class="actions">
@@ -38,18 +38,23 @@ layout: home
     {% endfor %}
 
     	{% if paginator.total_pages > 1 %}
-  	    <ul class="pager">
+  	    <ul class="actions pagination">
 	        
 	        <li><a href="{{ paginator.previous_page_path | prepend: base | replace: '//', '/' }}" 
 	        {% if paginator.previous_page %}
-	        class="disabled button big previous"
+	        class="button big previous"
 	        {% else %}
-			class="button big previous"	        
+			class="disabled button big previous"	        
 	        {% endif %}
 	        >Previous Page</a></li>
+
+	        <li><a href="{{ paginator.next_page_path | prepend: base | replace: '//', '/' }}" 
 	        {% if paginator.next_page %}
-	        <li><a href="{{ paginator.next_page_path | prepend: base | replace: '//', '/' }}" class="button big next">Next Page</a></li>
+	        class="button big next"
+	        {% else %}
+	        class="disabled button big next"
 	        {% endif %}
+	        >Next Page</a></li>
 	    </ul>
 	    {% endif %}
 	    

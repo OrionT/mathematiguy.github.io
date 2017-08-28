@@ -25,13 +25,17 @@ github_username: mathematiguy
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 paginate: 5
 plugins:
   - jekyll-feed
   - jekyll-paginate
 
 # Produces a cleaner folder structure when using categories
-permalink: /:year/:month/:title.html
+permalink: :year/:month/:title.html
 
 # Pagination Settings
 pagination:
