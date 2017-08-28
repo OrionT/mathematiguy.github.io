@@ -5,9 +5,9 @@ layout: home
 <!-- Main -->
 	<div id="main">
 
-	{% for post in site.posts limit: 3 %}
+	{% for post in paginator.posts %}
 
-		<!-- Post -->
+      <!-- Post -->
 			<article class="post">
 				<header>
 					<div class="title">
@@ -33,12 +33,17 @@ layout: home
 				</footer>
 			</article>
 
-	{% endfor %}
+    {% endfor %}
 
-		<!-- Pagination -->
-			<ul class="actions pagination">
-				<li><a href="" class="disabled button big previous">Previous Page</a></li>
-				<li><a href="#" class="button big next">Next Page</a></li>
-			</ul>
-
+    	{% if paginator.total_pages > 1 %}
+  	    <ul class="pager">
+	        {% if paginator.previous_page %}
+	        <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="disabled button big previous">Previous Page</a></li>
+	        {% endif %}
+	        {% if paginator.next_page %}
+	        <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button big next">Next Page</a></li>
+	        {% endif %}
+	    </ul>
+	    {% endif %}
+	    
 	</div>
