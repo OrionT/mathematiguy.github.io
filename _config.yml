@@ -25,9 +25,8 @@ github_username: mathematiguy
 
 # Build settings
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+highlighter: rouge
+
 
 paginate: 5
 plugins:
