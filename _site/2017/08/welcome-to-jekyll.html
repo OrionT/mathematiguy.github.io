@@ -163,13 +163,34 @@ indiciumque, illi tui arma gurgite paulatim suis Indis suspiria valuere vestra.
 Sic pro credas? Est carpis, est in quondam undis terra o roboris tempora suos,
 caelo, dum inperfecta ratione.</p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">show</span>
-  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
-  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
-    <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="c1"># show.html.erb</span>
-    <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json: </span><span class="vi">@widget</span> <span class="p">}</span>
-  <span class="k">end</span>
-<span class="k">end</span>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/env python</span>
+
+<span class="c"># Import the modules</span>
+
+<span class="kn">import</span> <span class="nn">bitlyapi</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="c"># Define your API information</span>
+
+<span class="n">API_USER</span> <span class="o">=</span> <span class="s">"your_api_username"</span>
+<span class="n">API_KEY</span> <span class="o">=</span> <span class="s">"your_api_key"</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="n">bitlyapi</span><span class="o">.</span><span class="n">BitLy</span><span class="p">(</span><span class="n">API_USER</span><span class="p">,</span> <span class="n">API_KEY</span><span class="p">)</span>
+
+<span class="c"># Define how to use the program</span>
+
+<span class="n">usage</span> <span class="o">=</span> <span class="s">"""Usage: python shortener.py [url]
+e.g python shortener.py http://www.google.com"""</span>
+
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">usage</span>
+    <span class="n">sys</span><span class="o">.</span><span class="nb">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">longurl</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">shorten</span><span class="p">(</span><span class="n">longUrl</span><span class="o">=</span><span class="n">longurl</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="n">response</span><span class="p">[</span><span class="s">'url'</span><span class="p">]</span>
 </code></pre>
 </div>
 

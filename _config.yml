@@ -27,7 +27,6 @@ github_username: mathematiguy
 markdown: kramdown
 highlighter: rouge
 
-
 paginate: 5
 plugins:
   - jekyll-feed
