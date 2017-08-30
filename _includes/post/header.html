@@ -7,6 +7,6 @@
 	</div>
 	<div class="meta">
 		<time class="published" datetime="2015-10-18">{{page.date | date: '%B %d, %Y'}}</time>
-		<a href="{{base}}/about-us/{{page.author | replace: ' ', '-'}}.html" class="author"><span class="name">{{page.author}}</span><img src="{{base}}/images/authors/{{page.author | replace: ' ', '-'}}.jpg" alt="" /></a>
+		<a href="{{base}}/about-us/{{page.author | replace: ' ', '-' | downcase}}.html" class="author"><span class="name">{{page.author}}</span><img src="{{base}}/images/authors/{{page.author | replace: ' ', '-'| downcase}}.jpg" alt="" /></a>
 	</div>
 </header>
