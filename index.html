@@ -18,7 +18,7 @@ layout: home
 					</div>
 					<div class="meta">
 						<time class="published" datetime="2015-11-01">{{post.date | date: '%B %d, %Y'}}</time>
-						<a href="{{base}}/about-us/{{post.author | replace: ' ', '-'}}.html" class="author"><span class="name">{{post.author}}</span><img src="{{base}}/images/avatar.jpg" alt="" /></a>
+						<a href="{{base}}/about-us/{{post.author | replace: ' ', '-' | downcase}}.html" class="author"><span class="name">{{post.author}}</span><img src="{{base}}/images/avatar.jpg" alt="" /></a>
 					</div>
 				</header>
 				<a href="{{base}}{{post.url}}" class="image featured"><img src="{{base}}/images/pic01.jpg" alt="" /></a>
