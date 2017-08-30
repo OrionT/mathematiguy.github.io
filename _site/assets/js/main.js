@@ -6,6 +6,12 @@
 
 (function($) {
 
+	$('#btn').on('click', 
+	 	function(){
+			$('#one').hide('slow')
+			$('#two').show('slow');
+	});
+
 	skel.breakpoints({
 		xlarge:	'(max-width: 1680px)',
 		large:	'(max-width: 1280px)',
