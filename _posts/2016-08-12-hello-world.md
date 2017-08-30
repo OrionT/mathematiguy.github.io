@@ -2,6 +2,7 @@
 layout: post
 title: "Terra dryades hunc blanditur si reperta principio"
 subtitle: "Solvit Samos Aeeta par exululat"
+author: "Caleb Moses"
 ---
 
 Lorem markdownum et lactis est verba celebrantur prope disci *furori* Chrysenque
