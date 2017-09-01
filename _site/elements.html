@@ -157,12 +157,16 @@ deck.shuffle();
 i++;
 }
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+print 'It took ' + i + ' iterations to sort the deck.';
+
+page.path: elements.html
+</code></pre>
 </section>
 
 <section>
 	<form method="POST" action="https://api.staticman.net/v2/entry/mathematiguy/mathematiguy.github.io/master/comments">
-	  <!-- <input name="options[redirect]" type="hidden" value="https://my-site.com"> -->
+	  <input name="options[redirect]" type="hidden" value="{page.a}">
+	  <input name="options[path]" type="hidden" value="elements.html">
 	  <!-- e.g. "2016-01-02-this-is-a-post" -->
 	  <input name="options[slug]" type="hidden" value="">
 	  <label><input name="fields[name]" type="text">Name</label>
@@ -448,6 +452,20 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</div>
 
 			</body>
+
+				<section>
+	<form method="POST" action="https://api.staticman.net/v2/entry/mathematiguy/mathematiguy.github.io/master/comments">
+	  <input name="options[redirect]" type="hidden" value="{page.absolute_url}">
+	  <input name="options[id]" type="hidden" value="">
+	  <!-- e.g. "2016-01-02-this-is-a-post" -->
+	  <input name="options[slug]" type="hidden" value="">
+	  <label><input name="fields[name]" type="text">Name</label>
+	  <label><input name="fields[email]" type="email">E-mail</label>
+	  <label><textarea name="fields[message]"></textarea>Message</label>
+	  
+	  <button type="submit">Go!</button>
+	</form>
+</section>
 
 				<footer>
 	<ul class="stats">
