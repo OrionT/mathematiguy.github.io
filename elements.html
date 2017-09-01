@@ -27,13 +27,16 @@ deck.shuffle();
 i++;
 }
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+print 'It took ' + i + ' iterations to sort the deck.';
+
+page.path: {{page.path}}
+</code></pre>
 </section>
 
 <section>
 	<form method="POST" action="https://api.staticman.net/v2/entry/mathematiguy/mathematiguy.github.io/master/comments">
 	  <input name="options[redirect]" type="hidden" value="{page.a}">
-	  <input name="options[path]" type="hidden" value="{page.path}">
+	  <input name="options[path]" type="hidden" value="{{page.path}}">
 	  <!-- e.g. "2016-01-02-this-is-a-post" -->
 	  <input name="options[slug]" type="hidden" value="{{ page.slug}}">
 	  <label><input name="fields[name]" type="text">Name</label>
