@@ -19,7 +19,7 @@ email: caleb.moses@datastories.co.nz
 description: > # this means to ignore newlines until "baseurl:"
   Fresh stories from the world of open data
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mathematiguy.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: /:categories/:year/:month/:day/:title.html
 
