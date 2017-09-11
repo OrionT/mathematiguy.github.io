@@ -13,7 +13,7 @@ comments:
   # (*) REQUIRED
   #
   # Destination path (filename) for the data files. Accepts placeholders.
-  filename: "{options.post_name}-comment-{options.id}-{options.slug}-{@timestamp}"
+  filename: "{options.slug}/comment-{@timestamp}"
 
   # (*) REQUIRED
   #
