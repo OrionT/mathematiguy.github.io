@@ -1,7 +1,7 @@
 <section>
 	<form method="POST" action="https://api.staticman.net/v2/entry/mathematiguy/mathematiguy.github.io/master/comments">
 	  <!-- slice page.id to remove opening backslash -->
-	  <input name="options[id]" type = "hidden" value="{{page.id | slice: 1, 1000}}">
+	  <input name="options[id]" type = "hidden" value="{{page.id | slice: 1, page.id.size}}">
 	  <label><input name="fields[name]" type="text">Name</label>
 	  <label><input name="fields[email]" type="email">E-mail</label>
 	  <label><textarea name="fields[message]"></textarea>Message</label>
