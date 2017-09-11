@@ -13,9 +13,8 @@ comments:
   # (*) REQUIRED
   #
   # Destination path (filename) for the data files. Accepts placeholders.
-  filename: "comment-{@date:YYYY-MM-DD H-mm-ss-SSSS}"
+  filename: "comment-{options.id}-{@date:YYYY-MM-DD H-mm-ss-SSSS}"
   # {options.id}
-  
   # (*) REQUIRED
   #
   # Names of the fields the form is allowed to submit. If a field that is
