@@ -13,7 +13,7 @@ comments:
   # (*) REQUIRED
   #
   # Destination path (filename) for the data files. Accepts placeholders.
-  filename: "comment-{options.slug}-{@date:YYYY-MM-DD H-mm-ss-SSSS}"
+  filename: "{options.id}/comment-{@date:YYYY-MM-DD H-mm-ss-SSSS}"
 
   # (*) REQUIRED
   #
