@@ -27,7 +27,7 @@ comments:
 
   # When allowedOrigins is defined, only requests sent from one of the domains
   # listed will be accepted.
-  allowedOrigins: ["localhost", "mathematiguy.github.com"]
+  allowedOrigins: ["localhost", "mathematiguy.github.io"]
 
   # Text to use as the commit message or pull request title. Accepts placeholders.
   commitMessage: "Add Staticman comment"
