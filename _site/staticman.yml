@@ -13,7 +13,7 @@ comments:
   # (*) REQUIRED
   #
   # Destination path (filename) for the data files. Accepts placeholders.
-  filename: "comment-{options.id | slice: 1, -1 |replace: "/", "-"}-{options.slug}-{@timestamp}"
+  filename: "comment-{options.id}-{options.slug}-{@timestamp}"
 
   # (*) REQUIRED
   #
