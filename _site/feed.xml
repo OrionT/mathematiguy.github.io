@@ -1,5 +1,71 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-12T00:09:41+12:00</updated><id>http://localhost:4000/</id><title type="html">Data Stories</title><subtitle>Fresh stories from the world of open data
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-09-12T21:16:57+12:00</updated><id>http://localhost:4000/</id><title type="html">Data Stories</title><subtitle>Fresh stories from the world of open data
 </subtitle><entry><title type="html">Welcome To Jekyll</title><link href="http://localhost:4000/2017/08/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome To Jekyll" /><published>2017-08-20T00:00:00+12:00</published><updated>2017-08-20T00:00:00+12:00</updated><id>http://localhost:4000/2017/08/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2017/08/welcome-to-jekyll.html">&lt;h1 id=&quot;cortice-audito-parentem-times-igitur-coniunctis-hirsuti&quot;&gt;Cortice audito parentem times igitur coniunctis hirsuti&lt;/h1&gt;
+
+&lt;h2 id=&quot;tenax-et-ferox-quam-nam-qui-urbs&quot;&gt;Tenax et ferox quam nam qui urbs&lt;/h2&gt;
+
+&lt;p&gt;Lorem markdownum fecit circumsonat nondum proceres in &lt;em&gt;quod ossibus&lt;/em&gt; gratulor
+obstipuit solum traiecit vicerat iamque, onus instructa agit sibi. Secuta
+Latonae. Duo undas non satis in evanuit languore funera te vidit nomine nostri
+&lt;strong&gt;mori aemula&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Nescia Pelasgos taedas inlimis totoque &lt;em&gt;accersite&lt;/em&gt; silvas est sidera &lt;em&gt;exspectat
+vestes&lt;/em&gt; terrae, plangorem. Ducens non manu magnos placato? Sub &lt;strong&gt;dedit relecto
+pugnavimus&lt;/strong&gt; melior saxo simul multo; matris, pelagi. &lt;strong&gt;Tum suum cornibus&lt;/strong&gt;,
+caelum &lt;em&gt;modulatur&lt;/em&gt; moverat Ismarios intemptata mentem tamen genibus.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Mihi sors nox sustinet! In nisi veteres poterat affata, fila auro ponere et
+mihi tangit. Tutus teque ut, convocat, quo custodia &lt;em&gt;femina&lt;/em&gt; vultus; sibi nemo
+iuris electae &lt;strong&gt;Xanthique&lt;/strong&gt; dexterior. Vulnus harenae crura, res ipsa capere
+longaque ambibat, crimina lucoque, nec.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;et-umeris-fugit-vehit-onchestius-antri&quot;&gt;Et umeris fugit vehit Onchestius antri&lt;/h2&gt;
+
+&lt;p&gt;Sperare cupiens tale saepius &lt;strong&gt;erubuit&lt;/strong&gt;. Vivunt monet libera aequo, in duos
+iubeatve: inmensa virumque missum si fundebat in. Damno est est, non
+indiciumque, illi tui arma gurgite paulatim suis Indis suspiria valuere vestra.
+Sic pro credas? Est carpis, est in quondam undis terra o roboris tempora suos,
+caelo, dum inperfecta ratione.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/env python&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Import the modules&lt;/span&gt;
+
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;bitlyapi&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sys&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Define your API information&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;API_USER&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;your_api_username&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;API_KEY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;your_api_key&quot;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bitlyapi&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BitLy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;API_USER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;API_KEY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Define how to use the program&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;usage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;Usage: python shortener.py [url]
+e.g python shortener.py http://www.google.com&quot;&quot;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;usage&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;longurl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shorten&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;longUrl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;longurl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'url'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Trepidi &lt;strong&gt;favent luctusque magnae&lt;/strong&gt;, nec me diversa pectora hoc tenebrae
+&lt;em&gt;regnat&lt;/em&gt; pavido in. Gens bis, voce potest urbes ex tenuisse, pallamque iussa,
+sum pressa ipsa. Liber &lt;a href=&quot;http://haec.net/obvertittot&quot;&gt;superbum&lt;/a&gt;; et advehar
+partu: pateres fama fores fulmina inque; ima.&lt;/p&gt;
+
+&lt;p&gt;Cornu singultantem moratus tegumenque Iovis. Obstet in &lt;em&gt;aspicite&lt;/em&gt;, fit illa
+Palameden, se hanc? Toto unus adspicit quaeque esse.&lt;/p&gt;</content><author><name>Caleb Moses</name></author><summary type="html">Cortice audito parentem times igitur coniunctis hirsuti</summary></entry><entry><title type="html">Welcome To Jekyll</title><link href="http://localhost:4000/2017/08/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome To Jekyll" /><published>2017-08-19T00:00:00+12:00</published><updated>2017-08-19T00:00:00+12:00</updated><id>http://localhost:4000/2017/08/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/2017/08/welcome-to-jekyll.html">&lt;h1 id=&quot;cortice-audito-parentem-times-igitur-coniunctis-hirsuti&quot;&gt;Cortice audito parentem times igitur coniunctis hirsuti&lt;/h1&gt;
 
 &lt;h2 id=&quot;tenax-et-ferox-quam-nam-qui-urbs&quot;&gt;Tenax et ferox quam nam qui urbs&lt;/h2&gt;
 

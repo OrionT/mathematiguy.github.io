@@ -1,0 +1,28 @@
+<!-- Consider implementing this section as a layout -->
+
+{% include post/comment-form.html %}
+
+<!-- slice up the page id to get the year, month & name -->
+{% assign page_bits = page.id | slice: 1, page.id.size | split: "/" %}
+
+<!-- We are assuming that the url has 3 parts exactly -->
+
+<!-- get the year, month and name of the post -->
+{% assign page_year = page_bits[0] %}
+{% assign page_month = page_bits[1] %}
+{% assign page_name = page_bits[2] %}
+
+<!-- use the year, month and name to find the comment folder in the comments directory -->
+{% assign comments = site.data.comments[page_year][page_month][page_name] %}
+
+{% for comment in comments %}
+
+	<!-- get the post name, date and message from the comment fields -->
+	{% assign name = comment[1].name %}
+	{% assign date = comment[1].date %}
+	{% assign message = comment[1].message %}
+
+	<!-- use post/comment.html as template to display the comment -->
+	{% include post/comment.html index=forloop.index name=name message=message date=date %}
+
+{% endfor %}
