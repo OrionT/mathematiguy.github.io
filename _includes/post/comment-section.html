@@ -15,7 +15,7 @@
 <!-- use the year, month and name to find the comment folder in the comments directory -->
 {% assign comments = site.data.comments[page_year][page_month][page_name] %}
 
-{% for comment in comments %}
+{% for comment in comments | where_exp: "item", "item.replying_to == '1'" %}
 
 	<!-- get the post name, date and message from the comment fields -->
 	{% assign name = comment[1].name %}
