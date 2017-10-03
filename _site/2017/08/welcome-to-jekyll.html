@@ -207,10 +207,12 @@ Palameden, se hanc? Toto unus adspicit quaeque esse.</p>
 
 			</body>
 
-				<!-- Consider implementing this section as a layout -->
+			<section>
 
-<section>
-	<form method="POST" action="https://api.staticman.net/v2/entry/mathematiguy/mathematiguy.github.io/master/comments">
+				<h3>Post a comment:</h3><br>
+
+				<section>
+	<form form id="comment-form" class="page__form js-form form" method="POST" action="https://api.staticman.net/v2/entry/mathematiguy/mathematiguy.github.io/master/comments">
 	  <!-- slice page.id to remove opening backslash -->
 	  <input name="options[id]" type = "hidden" value="2017/08/welcome-to-jekyll">
 	  <input type="hidden" id="comment-parent" name="fields[replying_to]" value="">
@@ -218,9 +220,12 @@ Palameden, se hanc? Toto unus adspicit quaeque esse.</p>
 	  <label><input name="fields[name]" type="text">Name</label>
 	  <label><input name="fields[email]" type="email">E-mail</label>
 	  <label><textarea name="fields[message]"></textarea>Message</label>
-	  <button type="submit">Go!</button>
+	  <button type="submit">Post</button>
 	</form>
 </section>
+
+				<!-- Consider implementing this section as a layout -->
+<script src="../../assets/js/comment-reply.js"></script>
 
 <!-- slice up the page id to get the year, month & name -->
 
@@ -237,223 +242,18 @@ Palameden, se hanc? Toto unus adspicit quaeque esse.</p>
 
 
 
+
+	
 	<!-- get the post name, date and message from the comment fields -->
 	
 	
 	
-
+	
+	
 	<!-- use post/comment.html as template to display the comment -->
-	<article id="comment1" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+	<article id="comment-1" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
   <div class="comment__avatar-wrapper">
-    <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&amp;s=50" srcset="https://www.gravatar.com/avatar/?d=mm&amp;s=100 2x" alt="Tamara" height="50" width="50">
-  </div>
-  <div class="comment__content-wrapper">
-    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <span itemprop="name">Caleb</span>
-    </h3>
-    <div class="comment__date">
-      <a href="#comment1" itemprop="url">
-      <time datetime="2017-09-11T11:23:09.813Z" itemprop="datePublished">September 11, 2017</time>
-      </a>
-    </div>
-    <div itemprop="text"><p><p>test</p>
-</p></div>
-  </div>
-</article>
-
-
-
-	<!-- get the post name, date and message from the comment fields -->
-	
-	
-	
-
-	<!-- use post/comment.html as template to display the comment -->
-	<article id="comment1" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-  <div class="comment__avatar-wrapper">
-    <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&amp;s=50" srcset="https://www.gravatar.com/avatar/?d=mm&amp;s=100 2x" alt="Tamara" height="50" width="50">
-  </div>
-  <div class="comment__content-wrapper">
-    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <span itemprop="name">Caleb</span>
-    </h3>
-    <div class="comment__date">
-      <a href="#comment1" itemprop="url">
-      <time datetime="2017-09-11T11:27:30.271Z" itemprop="datePublished">September 11, 2017</time>
-      </a>
-    </div>
-    <div itemprop="text"><p><p>This is another test</p>
-</p></div>
-  </div>
-</article>
-
-
-
-	<!-- get the post name, date and message from the comment fields -->
-	
-	
-	
-
-	<!-- use post/comment.html as template to display the comment -->
-	<article id="comment1" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-  <div class="comment__avatar-wrapper">
-    <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&amp;s=50" srcset="https://www.gravatar.com/avatar/?d=mm&amp;s=100 2x" alt="Tamara" height="50" width="50">
-  </div>
-  <div class="comment__content-wrapper">
-    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <span itemprop="name">Caleb</span>
-    </h3>
-    <div class="comment__date">
-      <a href="#comment1" itemprop="url">
-      <time datetime="2017-09-11T11:52:43.088Z" itemprop="datePublished">September 11, 2017</time>
-      </a>
-    </div>
-    <div itemprop="text"><p><p>test</p>
-</p></div>
-  </div>
-</article>
-
-
-
-	<!-- get the post name, date and message from the comment fields -->
-	
-	
-	
-
-	<!-- use post/comment.html as template to display the comment -->
-	<article id="comment1" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-  <div class="comment__avatar-wrapper">
-    <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&amp;s=50" srcset="https://www.gravatar.com/avatar/?d=mm&amp;s=100 2x" alt="Tamara" height="50" width="50">
-  </div>
-  <div class="comment__content-wrapper">
-    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <span itemprop="name">Caleb</span>
-    </h3>
-    <div class="comment__date">
-      <a href="#comment1" itemprop="url">
-      <time datetime="2017-09-11T11:53:17.464Z" itemprop="datePublished">September 11, 2017</time>
-      </a>
-    </div>
-    <div itemprop="text"><p><p>test</p>
-</p></div>
-  </div>
-</article>
-
-
-
-	<!-- get the post name, date and message from the comment fields -->
-	
-	
-	
-
-	<!-- use post/comment.html as template to display the comment -->
-	<article id="comment1" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-  <div class="comment__avatar-wrapper">
-    <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&amp;s=50" srcset="https://www.gravatar.com/avatar/?d=mm&amp;s=100 2x" alt="Tamara" height="50" width="50">
-  </div>
-  <div class="comment__content-wrapper">
-    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <span itemprop="name">Caleb</span>
-    </h3>
-    <div class="comment__date">
-      <a href="#comment1" itemprop="url">
-      <time datetime="2017-09-11T11:54:03.592Z" itemprop="datePublished">September 11, 2017</time>
-      </a>
-    </div>
-    <div itemprop="text"><p><p>test</p>
-</p></div>
-  </div>
-</article>
-
-
-
-	<!-- get the post name, date and message from the comment fields -->
-	
-	
-	
-
-	<!-- use post/comment.html as template to display the comment -->
-	<article id="comment1" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-  <div class="comment__avatar-wrapper">
-    <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&amp;s=50" srcset="https://www.gravatar.com/avatar/?d=mm&amp;s=100 2x" alt="Tamara" height="50" width="50">
-  </div>
-  <div class="comment__content-wrapper">
-    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <span itemprop="name">Caleb</span>
-    </h3>
-    <div class="comment__date">
-      <a href="#comment1" itemprop="url">
-      <time datetime="2017-09-11T11:56:00.737Z" itemprop="datePublished">September 11, 2017</time>
-      </a>
-    </div>
-    <div itemprop="text"><p><p>Here is another comment attempt</p>
-</p></div>
-  </div>
-</article>
-
-
-
-	<!-- get the post name, date and message from the comment fields -->
-	
-	
-	
-
-	<!-- use post/comment.html as template to display the comment -->
-	<article id="comment1" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-  <div class="comment__avatar-wrapper">
-    <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&amp;s=50" srcset="https://www.gravatar.com/avatar/?d=mm&amp;s=100 2x" alt="Tamara" height="50" width="50">
-  </div>
-  <div class="comment__content-wrapper">
-    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <span itemprop="name">Caleb</span>
-    </h3>
-    <div class="comment__date">
-      <a href="#comment1" itemprop="url">
-      <time datetime="2017-09-11T11:58:42.877Z" itemprop="datePublished">September 11, 2017</time>
-      </a>
-    </div>
-    <div itemprop="text"><p><p>here is an email</p>
-</p></div>
-  </div>
-</article>
-
-
-
-	<!-- get the post name, date and message from the comment fields -->
-	
-	
-	
-
-	<!-- use post/comment.html as template to display the comment -->
-	<article id="comment1" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-  <div class="comment__avatar-wrapper">
-    <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&amp;s=50" srcset="https://www.gravatar.com/avatar/?d=mm&amp;s=100 2x" alt="Tamara" height="50" width="50">
-  </div>
-  <div class="comment__content-wrapper">
-    <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <span itemprop="name">Caleb</span>
-    </h3>
-    <div class="comment__date">
-      <a href="#comment1" itemprop="url">
-      <time datetime="2017-09-11T12:00:33.253Z" itemprop="datePublished">September 11, 2017</time>
-      </a>
-    </div>
-    <div itemprop="text"><p><p>Here is another test</p>
-</p></div>
-  </div>
-</article>
-
-
-
-	<!-- get the post name, date and message from the comment fields -->
-	
-	
-	
-
-	<!-- use post/comment.html as template to display the comment -->
-	<article id="comment1" class="js-comment comment" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
-  <div class="comment__avatar-wrapper">
-    <img class="comment__avatar" src="https://www.gravatar.com/avatar/?d=mm&amp;s=50" srcset="https://www.gravatar.com/avatar/?d=mm&amp;s=100 2x" alt="Tamara" height="50" width="50">
+    <img class="comment__avatar" src="" srcset="" alt="" height="50" width="50">
   </div>
   <div class="comment__content-wrapper">
     <h3 class="comment__author" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -464,14 +264,22 @@ Palameden, se hanc? Toto unus adspicit quaeque esse.</p>
       <time datetime="2017-09-12T10:57:02.285Z" itemprop="datePublished">September 12, 2017</time>
       </a>
     </div>
-    <div itemprop="text"><p><p>Ima lovatus mya darlingdem Cabobo Morsus</p>
+    <div itemprop="text">
+    <p><p>Ima lovatus mya darlingdem Cabobo Morsus</p>
 </p></div>
+    <ul class="actions small">
+      <li><div class="comment-reply">
+      <a rel="nofollow" class="button small" href="#comment-1" onclick="return addComment.moveForm('comment-1', '1', 'respond', 'welcome-to-jekyll')">Reply</a>
+      </div></li>
+     </ul>
   </div>
 </article>
 
 
 
-				<footer>
+			</section>
+
+			<footer>
 	<ul class="stats">
 		<li><a href="#">General</a></li>
 		<li><a href="#" class="icon fa-heart">28</a></li>

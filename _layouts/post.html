@@ -21,9 +21,17 @@ layout: default
 
 			</body>
 
+			<section>
+
+				<h3>Post a comment:</h3><br>
+
+				{% include post/comment-form.html %}
+
 				{% include post/comment-section.html %}
 
-				{% include post/footer.html %}
+			</section>
+
+			{% include post/footer.html %}
 
 		</article>
 

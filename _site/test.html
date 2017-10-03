@@ -108,19 +108,7 @@
 	</section>
 
 					<!-- Consider implementing this section as a layout -->
-
-<section>
-	<form method="POST" action="https://api.staticman.net/v2/entry/mathematiguy/mathematiguy.github.io/master/comments">
-	  <!-- slice page.id to remove opening backslash -->
-	  <input name="options[id]" type = "hidden" value="">
-	  <input type="hidden" id="comment-parent" name="fields[replying_to]" value="">
-	  <input name="options[redirect]" type="hidden" value="http://localhost:4000/test">
-	  <label><input name="fields[name]" type="text">Name</label>
-	  <label><input name="fields[email]" type="email">E-mail</label>
-	  <label><textarea name="fields[message]"></textarea>Message</label>
-	  <button type="submit">Go!</button>
-	</form>
-</section>
+<script src="/assets/js/comment-reply.js"></script>
 
 <!-- slice up the page id to get the year, month & name -->
 
@@ -133,6 +121,8 @@
 
 
 <!-- use the year, month and name to find the comment folder in the comments directory -->
+
+
 
 
 

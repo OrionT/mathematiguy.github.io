@@ -1,6 +1,5 @@
 <!-- Consider implementing this section as a layout -->
-
-{% include post/comment-form.html %}
+<script src="{{base}}/assets/js/comment-reply.js"></script>
 
 <!-- slice up the page id to get the year, month & name -->
 {% assign page_bits = page.id | slice: 1, page.id.size | split: "/" %}
@@ -13,16 +12,21 @@
 {% assign page_name = page_bits[2] %}
 
 <!-- use the year, month and name to find the comment folder in the comments directory -->
-{% assign comments = site.data.comments[page_year][page_month][page_name] %}
+{% assign comments = site.data.comments[page_year][page_month][page_name] | where_exp: "comment", "comment.replying_to != ''"%}
 
-{% for comment in comments | where_exp: "item", "item.replying_to == '1'" %}
+{% if comments.size > 1 %}
+{% assign comments = comments | sort: 'date' %}
+{% endif %}
 
+{% for comment in comments %}
+	
 	<!-- get the post name, date and message from the comment fields -->
-	{% assign name = comment[1].name %}
-	{% assign date = comment[1].date %}
-	{% assign message = comment[1].message %}
-
+	{% assign name = comment.name %}
+	{% assign message = comment.message %}
+	{% assign date = comment.date %}
+	{% assign replying_to = comment.replying_to %}
+	
 	<!-- use post/comment.html as template to display the comment -->
-	{% include post/comment.html index=forloop.index name=name message=message date=date %}
+	{% include post/comment.html index=forloop.index name=name message=message date=date replying_to=replying_to%}
 
 {% endfor %}

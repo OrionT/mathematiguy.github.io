@@ -453,10 +453,12 @@ page.path: elements.html
 
 			</body>
 
-				<!-- Consider implementing this section as a layout -->
+			<section>
 
-<section>
-	<form method="POST" action="https://api.staticman.net/v2/entry/mathematiguy/mathematiguy.github.io/master/comments">
+				<h3>Post a comment:</h3><br>
+
+				<section>
+	<form form id="comment-form" class="page__form js-form form" method="POST" action="https://api.staticman.net/v2/entry/mathematiguy/mathematiguy.github.io/master/comments">
 	  <!-- slice page.id to remove opening backslash -->
 	  <input name="options[id]" type = "hidden" value="">
 	  <input type="hidden" id="comment-parent" name="fields[replying_to]" value="">
@@ -464,9 +466,12 @@ page.path: elements.html
 	  <label><input name="fields[name]" type="text">Name</label>
 	  <label><input name="fields[email]" type="email">E-mail</label>
 	  <label><textarea name="fields[message]"></textarea>Message</label>
-	  <button type="submit">Go!</button>
+	  <button type="submit">Post</button>
 	</form>
 </section>
+
+				<!-- Consider implementing this section as a layout -->
+<script src="../assets/js/comment-reply.js"></script>
 
 <!-- slice up the page id to get the year, month & name -->
 
@@ -483,7 +488,11 @@ page.path: elements.html
 
 
 
-				<footer>
+
+
+			</section>
+
+			<footer>
 	<ul class="stats">
 		<li><a href="#">General</a></li>
 		<li><a href="#" class="icon fa-heart">28</a></li>
